@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("/assets/img/bg.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+.nav {
+    position: fixed;
+    background-color: black;
+    height: 25px;
+    width: 1350px;
+    padding: 1rem;
+    display: flex;
+    font-family: 'Rubik Mono One', sans-serif;    justify-content: space-between;
+    opacity: 50%;
+}
+.nav h4 {
+    color: white;
+    /* opacity: 100%; */
+}
+.nav ul {
+    list-style: none;
+    margin-right: 25px; 
+    word-spacing: 10px;
+    display: flex;
+    gap: 1rem;
+
+}
+.nav ul li {
+    color: white;
+    float: right;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#profil {
+    z-index: 5;
+    padding-top: 65px;
+    height: 20%;
+    width: 20%;
+}
+#intro {
+    z-index: 3;
+    font-family: 'Rubik Mono One', sans-serif;    justify-content: space-between;
+    font-size: 25px;
+    padding-top: 50px;
+    z-index: 0;
+}
+#intro2 {
+    z-index: 4;
+    color: whitesmoke;
+    font-family: 'Rubik Mono One', sans-serif;    justify-content: space-between;
+
+}
+.animasi-teks {
+    z-index: 2;
+    font-family: 'Rubik Mono One', sans-serif;    justify-content: space-between;
+    color: white;
+    font-size: 29px;
+    width: 100%;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: typing 10s steps(70, end);
+    animation: animasi-ketik 10s steps(70, end);
+  }
+.animasi-teks p{
+    color: lightblue;
+}
+  @keyframes animasi-ketik{
+    from { width: 0; }
+  }
+  
+  @-webkit-keyframes animasi-ketik{
+    from { width: 0; }
+  }
